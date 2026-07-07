@@ -3,3 +3,10 @@ CLAUDE.md
 
 # VSCode
 .VSCode
+
+# macOS
+**/.DS_Store
+
+# Working/scratch material, not site content
+artifacts/*
+creating_a_data_science_portfolio.txt

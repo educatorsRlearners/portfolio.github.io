@@ -1,49 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Evan Simpson's Portfolio</title>
 </head>
+
 <body>
-    <div class="grid-2">
-        <div class="section-1">
-            <i class="fas fa-laptop-code fa-5x white"></i>
-            <h2>Evan Simpson</h2>
-            <a href="https://www.linkedin.com/in/evansimpson1/"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/educatorsRlearners"><i class="fab fa-github"></i></a>
-            <a href="mailto:p.evansimpson@gmail.com"><i class="far fa-envelope"></i></a>
-            <a href="https://github.com/educatorsRlearners/portfolio.github.io/blob/master/evan_simpson_cv.pdf"><i class="fas fa-file"></i></a>
+
+    <header class="hero">
+        <div class="container hero-inner">
+            <img src="images/evan_simpson.png" alt="Evan Simpson presenting at a conference" class="hero-photo">
+            <div class="hero-content">
+                <h1>Evan Simpson</h1>
+                <p class="tagline">I find the right questions to ask — then build the systems that answer them.</p>
+                <div class="roles">
+                    <span>Educational Data Analyst</span>
+                    <span>Machine Learning Engineer</span>
+                    <span>Technical Writer</span>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/evansimpson1/" title="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/educatorsRlearners" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:p.evansimpson@gmail.com" title="Email"><i class="far fa-envelope"></i></a>
+                    <a href="https://github.com/educatorsRlearners/portfolio.github.io/blob/master/evan_simpson_cv.pdf"
+                        title="CV"><i class="fas fa-file"></i></a>
+                </div>
+            </div>
         </div>
-        <div class="section-2">
+    </header>
+
+    <main class="container">
+
+        <section id="about">
             <h2>About</h2>
-            <p>Data scientist, educator, and teacher trainer focused on promoting data-informed decision making who is adept at explaining complex concepts to non-technical audiences. Lifelong learner who sees everyday as an opportunity to learn and share.</p>
+            <p>Data scientist, educator, and teacher trainer focused on promoting data-informed decision making who is
+                adept at explaining complex concepts to non-technical audiences. Lifelong learner who sees every day as
+                an opportunity to learn and share.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Languages & Analysis</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>R</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span>Machine Learning</span>
+                        <span>Deep Learning</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Data & Analytics Engineering</h3>
+                    <div class="skill-tags">
+                        <span>dbt</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Visualization & BI</h3>
+                    <div class="skill-tags">
+                        <span>Tableau</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>AI-Assisted Workflows</h3>
+                    <div class="skill-tags">
+                        <span>Claude</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Communication</h3>
+                    <div class="skill-tags">
+                        <span>Technical Writing</span>
+                        <span>Public Speaking</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="soft-skills">
             <h2>Soft Skills</h2>
-            <a href="https://www.britishcouncil.cn/en/EAAST/clients">Designing and Delivering Training Seminars</a>
-            <a href="https://youtu.be/BpOrMErz988">Presenting</a>
-            <p>Stakeholder Management</p>
-            <h2>Technical Skills</h2>
-            <p><b>Python:</b> pandas, BeautifulSoup, scikit-learn, TensorFlow</p>
-            <p><b>R:</b> dplyr, rvest, tmap, ggplot, forcats</p>
-            <p><b>Software:</b> SPSS, JMP, Winsteps, FACETS</p>
-            <p><b>General:</b> git, Bash, AWS</p>
-            <p><b>SQL</b></p>
+            <div class="skill-tags">
+                <span><a href="https://www.britishcouncil.cn/en/EAAST/clients">Designing and Delivering Training
+                        Seminars</a></span>
+                <span><a href="https://youtu.be/BpOrMErz988">Presenting</a></span>
+                <span>Stakeholder Management</span>
+            </div>
+        </section>
+
+        <section id="projects">
             <h2>Projects</h2>
-            <a href="https://github.com/educatorsRlearners/book-maturity"> Identifying the maturity level of a book to improve recommendations</a>
-            <p style="margin-left: 40px">Topics: webscraping, machine learning (XGBoost, LSTM) and computer vision</p>
-            <a href="https://github.com/educatorsRlearners/podrevday/blob/master/README.md">Analysis of #PodRevDay</a>
-            <p style="margin-left: 40px">Topics: Twitter scraping, descriptive statistics, and data visualization</p>
-            <h2>Professional Blogs</h2>
-            <a href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/">An A to Z of Machine Learning</a>
-            <p style="margin-left: 40px">Promoting the understanding and adoption of machine learning</p>
-            <a href="https://educators-r-learners.netlify.app/">Educators R Learners</a>
-            <p style="margin-left: 40px">Using R for creating visualizations to expalin data</p>
-            <a href="https://teachinglearninglearningteaching.wordpress.com/">Teaching Learning Learning Teaching</a>
-            <p style="margin-left: 40px">Highlighting edtech use cases and best practices</p>
+
+            <div class="card">
+                <h3><a href="https://github.com/educatorsRlearners/book-maturity">Identifying the Maturity Level of a
+                        Book to Improve Recommendations</a></h3>
+                <p>When trying to predict the minimum reader age for a book, is the cover art or the book's details a
+                    better signal? I built and compared models using XGBoost, an LSTM, and computer vision on the cover
+                    art to answer the question — presented as a talk, <a href="https://youtu.be/BpOrMErz988">"Using
+                        Machine Learning to Identify Text Maturity."</a></p>
+                <div class="tags">
+                    <span>Web Scraping</span>
+                    <span>XGBoost</span>
+                    <span>LSTM</span>
+                    <span>Computer Vision</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3><a href="https://github.com/educatorsRlearners/podrevday/blob/master/README.md">Analysis of
+                        #PodRevDay</a></h3>
+                <p>Scraped and analyzed Twitter conversation around the #PodRevDay hashtag to surface descriptive
+                    patterns in how the podcasting community discussed revenue, turning unstructured social data into a
+                    clear visual narrative.</p>
+                <div class="tags">
+                    <span>Twitter Scraping</span>
+                    <span>Descriptive Statistics</span>
+                    <span>Data Visualization</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="writing">
+            <h2>Writing & Talks</h2>
+
+            <p class="writing-subhead">Technical Writing</p>
+
+            <div class="card">
+                <h3><a href="https://deepchecks.com/why-you-need-ml-monitoring-for-data-quality-issues/">Why You Need ML
+                        Monitoring for Data Quality Issues</a></h3>
+                <p>Explains why data quality issues undermine ML models in production and how ML monitoring catches
+                    them.</p>
+                <div class="meta">Deepchecks</div>
+            </div>
+
+            <div class="card">
+                <h3><a href="https://deepchecks.com/ml-platform-architecture-building-an-ml-platform-from-scratch/">ML
+                        Platform Architecture: Building an ML Platform from Scratch</a></h3>
+                <p>Outlines the steps and open-source tools for building an ML platform to standardize how models are
+                    designed, trained, deployed, and monitored.</p>
+                <div class="meta">Deepchecks</div>
+            </div>
+
+            <div class="card">
+                <h3><a href="https://deepchecks.com/what-to-look-for-in-an-ai-governance-solution/">What to Look for in
+                        an AI Governance Solution</a></h3>
+                <p>A guide to evaluating AI governance solutions for MLOps professionals dealing with model drift, data
+                    changes, and explainability.</p>
+                <div class="meta">Deepchecks</div>
+            </div>
+
+            <div class="card">
+                <h3><a href="https://deepchecks.com/guide-to-semi-supervised-learning/">A Comprehensive Guide to
+                        Semi-Supervised Learning & How it Improves Machine Learning</a></h3>
+                <p>Discusses the fundamentals of semi-supervised learning and how it improves machine learning.</p>
+                <div class="meta">Deepchecks</div>
+            </div>
+
+            <div class="card">
+                <h3><a href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/">An A to Z of Machine
+                        Learning</a></h3>
+                <p>Promoting the understanding and adoption of machine learning.</p>
+            </div>
+
+            <div class="card">
+                <h3><a href="https://educators-r-learners.netlify.app/">Educators R Learners</a></h3>
+                <p>Using R for creating visualizations to explain data.</p>
+            </div>
+
+            <div class="card">
+                <h3><a href="https://teachinglearninglearningteaching.wordpress.com/">Teaching Learning Learning
+                        Teaching</a></h3>
+                <p>Highlighting edtech use cases and best practices.</p>
+            </div>
+
+            <p class="writing-subhead">Talks</p>
+
+            <div class="card">
+                <h3><a href="https://www.youtube.com/watch?v=-JlafCGCEaE">Life is Not a Kaggle Competition: Using
+                        SNScrape to Create Datasets</a></h3>
+                <p>It's often said that 80% of a data scientist's time is spent cleaning data — but how do you get the
+                    data in the first place? Introduces SNScrape, a scraper for social networking sites, its trade-offs
+                    versus official APIs, and several use cases.</p>
+            </div>
+
+            <div class="card">
+                <h3><a href="https://www.youtube.com/watch?v=BpOrMErz988">Using Machine Learning to Identify Text
+                        Maturity</a></h3>
+                <p>When attempting to identify the minimum age a reader should be for a book, which information is a
+                    better basis for making predictions: the cover or the details of the book? I used XGBoost, NLP, and
+                    computer vision, then compared the results.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Evan Simpson</p>
         </div>
-    </div>
+    </footer>
+
 </body>
+
 </html>
