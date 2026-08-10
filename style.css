@@ -14,6 +14,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -45,11 +49,6 @@ a{
     display: flex;
     align-items: baseline;
     gap: 0.5rem;
-}
-
-.eyebrow .num{
-    color: var(--accent);
-    font-weight: 600;
 }
 
 /* nav */
@@ -191,12 +190,12 @@ a{
 .hero-photo-row{
     display: flex;
     align-items: center;
-    gap: 0.85rem;
+    gap: 1.25rem;
 }
 
 .hero-photo{
-    width: 56px;
-    height: 56px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center 15%;
@@ -433,6 +432,30 @@ footer a{
 
 footer a:hover{
     color: var(--accent);
+}
+
+/* back to top */
+.back-to-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 1.75rem;
+    bottom: 1.75rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    background: var(--ink);
+    color: var(--surface);
+    font-size: 1.1rem;
+    line-height: 1;
+    box-shadow: 0 2px 10px rgba(28, 26, 21, 0.25);
+    transition: background 0.15s;
+    z-index: 20;
+}
+
+.back-to-top:hover{
+    background: var(--accent);
 }
 
 /* responsive */
