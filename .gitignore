@@ -1,6 +1,7 @@
 # Claude Files
 CLAUDE.md
 .claude/
+.playwright-mcp
 
 # VSCode
 .VSCode

@@ -17,11 +17,20 @@
         <div class="container">
             <span class="brand">Evan Simpson <span class="dot">&#9632;</span></span>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#writing">Writing</a></li>
+                <li><a href="#about" class="active" aria-current="page">About</a></li>
+                <li><a href="#skills" class="active" aria-current="page">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="writing.html">Writing</a></li>
             </ul>
+            <details class="nav-toggle">
+                <summary>Menu</summary>
+                <ul>
+                    <li><a href="#about" class="active" aria-current="page">About</a></li>
+                    <li><a href="#skills" class="active" aria-current="page">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="writing.html">Writing</a></li>
+                </ul>
+            </details>
         </div>
     </nav>
 
@@ -39,7 +48,7 @@
                             class="accent">solve it</span>?"</h1>
                     <p class="lede">I'm Evan — a data analyst, ML engineer, and technical writer who spends most of
                         my time figuring out which question is actually worth answering.</p>
-                    <a href="#projects" class="btn">View my work &rarr;</a>
+                    <a href="projects.html" class="btn">View my work &rarr;</a>
                 </div>
                 <div class="hero-sidebar">
                     <div class="stat-block hero-photo-row">
@@ -170,138 +179,6 @@
                         <span>Technical Writing</span>
                         <span>Public Speaking</span>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="container">
-            <div class="section-header">
-                <span class="eyebrow"><span class="num">03</span> Projects</span>
-                <span class="eyebrow">Selected Builds</span>
-            </div>
-            <h2>Questions I've chased far enough to build something.</h2>
-
-            <div class="index-row">
-                <span class="idx">01</span>
-                <div>
-                    <h3><a href="https://github.com/educatorsRlearners/book-maturity">Identifying the Maturity Level
-                            of a Book to Improve Recommendations</a></h3>
-                    <p>When trying to predict the minimum reader age for a book, is the cover art or the book's
-                        details a better signal? I built and compared models using XGBoost, an LSTM, and computer
-                        vision on the cover art to answer the question — presented as a talk, <a
-                            href="https://youtu.be/BpOrMErz988">"Using Machine Learning to Identify Text
-                            Maturity."</a></p>
-                    <div class="tag-line">Web Scraping &middot; XGBoost &middot; LSTM &middot; Computer Vision</div>
-                </div>
-            </div>
-            <div class="index-row">
-                <span class="idx">02</span>
-                <div>
-                    <h3><a href="https://github.com/educatorsRlearners/podrevday/blob/master/README.md">Analysis of
-                            #PodRevDay</a></h3>
-                    <p>Scraped and analyzed Twitter conversation around the #PodRevDay hashtag to surface descriptive
-                        patterns in how the podcasting community discussed revenue, turning unstructured social data
-                        into a clear visual narrative.</p>
-                    <div class="tag-line">Twitter Scraping &middot; Descriptive Statistics &middot; Data
-                        Visualization</div>
-                </div>
-            </div>
-        </section>
-
-        <section id="writing" class="container">
-            <div class="section-header">
-                <span class="eyebrow"><span class="num">04</span> Writing &amp; Talks</span>
-                <span class="eyebrow">Explaining It Clearly</span>
-            </div>
-            <h2>Writing and talks on ML, data, and the questions behind them.</h2>
-
-            <p class="writing-subhead">Technical Writing</p>
-
-            <div class="index-row">
-                <span class="idx">01</span>
-                <div>
-                    <h3><a href="https://deepchecks.com/why-you-need-ml-monitoring-for-data-quality-issues/">Why You
-                            Need ML Monitoring for Data Quality Issues</a></h3>
-                    <p>Explains why data quality issues undermine ML models in production and how ML monitoring
-                        catches them.</p>
-                    <div class="tag-line">Deepchecks</div>
-                </div>
-            </div>
-            <div class="index-row">
-                <span class="idx">02</span>
-                <div>
-                    <h3><a
-                            href="https://deepchecks.com/ml-platform-architecture-building-an-ml-platform-from-scratch/">ML
-                            Platform Architecture: Building an ML Platform from Scratch</a></h3>
-                    <p>Outlines the steps and open-source tools for building an ML platform to standardize how models
-                        are designed, trained, deployed, and monitored.</p>
-                    <div class="tag-line">Deepchecks</div>
-                </div>
-            </div>
-            <div class="index-row">
-                <span class="idx">03</span>
-                <div>
-                    <h3><a href="https://deepchecks.com/what-to-look-for-in-an-ai-governance-solution/">What to Look
-                            for in an AI Governance Solution</a></h3>
-                    <p>A guide to evaluating AI governance solutions for MLOps professionals dealing with model
-                        drift, data changes, and explainability.</p>
-                    <div class="tag-line">Deepchecks</div>
-                </div>
-            </div>
-            <div class="index-row">
-                <span class="idx">04</span>
-                <div>
-                    <h3><a href="https://deepchecks.com/guide-to-semi-supervised-learning/">A Comprehensive Guide to
-                            Semi-Supervised Learning &amp; How it Improves Machine Learning</a></h3>
-                    <p>Discusses the fundamentals of semi-supervised learning and how it improves machine learning.
-                    </p>
-                    <div class="tag-line">Deepchecks</div>
-                </div>
-            </div>
-            <div class="index-row">
-                <span class="idx">05</span>
-                <div>
-                    <h3><a href="https://educatorsrlearners.github.io/an-a-z-of-machine-learning/">An A to Z of
-                            Machine Learning</a></h3>
-                    <p>Promoting the understanding and adoption of machine learning.</p>
-                </div>
-            </div>
-            <div class="index-row">
-                <span class="idx">06</span>
-                <div>
-                    <h3><a href="https://educators-r-learners.netlify.app/">Educators R Learners</a></h3>
-                    <p>Using R for creating visualizations to explain data.</p>
-                </div>
-            </div>
-            <div class="index-row">
-                <span class="idx">07</span>
-                <div>
-                    <h3><a href="https://teachinglearninglearningteaching.wordpress.com/">Teaching Learning Learning
-                            Teaching</a></h3>
-                    <p>Highlighting edtech use cases and best practices.</p>
-                </div>
-            </div>
-
-            <p class="writing-subhead">Talks</p>
-
-            <div class="index-row">
-                <span class="idx">01</span>
-                <div>
-                    <h3><a href="https://www.youtube.com/watch?v=-JlafCGCEaE">Life is Not a Kaggle Competition: Using
-                            SNScrape to Create Datasets</a></h3>
-                    <p>It's often said that 80% of a data scientist's time is spent cleaning data — but how do you
-                        get the data in the first place? Introduces SNScrape, a scraper for social networking sites,
-                        its trade-offs versus official APIs, and several use cases.</p>
-                </div>
-            </div>
-            <div class="index-row">
-                <span class="idx">02</span>
-                <div>
-                    <h3><a href="https://www.youtube.com/watch?v=BpOrMErz988">Using Machine Learning to Identify Text
-                            Maturity</a></h3>
-                    <p>When attempting to identify the minimum age a reader should be for a book, which information
-                        is a better basis for making predictions: the cover or the details of the book? I used
-                        XGBoost, NLP, and computer vision, then compared the results.</p>
                 </div>
             </div>
         </section>

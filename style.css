@@ -94,6 +94,16 @@ a{
     color: var(--ink);
 }
 
+.site-nav ul a.active{
+    color: var(--ink);
+    font-weight: 600;
+}
+
+/* mobile nav toggle (CSS-only, no JS) */
+.nav-toggle{
+    display: none;
+}
+
 /* hero */
 .hero{
     padding: 3.5rem 0 4.5rem;
@@ -237,7 +247,8 @@ section{
     margin-bottom: 2.75rem;
 }
 
-section h2{
+section h2,
+.page-title h1{
     font-family: 'Fraunces', serif;
     font-weight: 500;
     font-size: 2.1rem;
@@ -250,6 +261,15 @@ section h2{
 section h2 em{
     font-style: italic;
     color: var(--accent);
+}
+
+/* page-title (Projects / Writing page headers, reuses .hero-eyebrows) */
+.page-title{
+    padding: 3rem 0 1rem;
+}
+
+.page-title h1{
+    margin: 0;
 }
 
 /* about */
@@ -431,7 +451,8 @@ footer a:hover{
         display: none;
     }
 
-    section h2{
+    section h2,
+    .page-title h1{
         font-size: 1.7rem;
     }
 
@@ -439,5 +460,62 @@ footer a:hover{
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
+    }
+
+    .site-nav .container{
+        position: relative;
+    }
+
+    .nav-toggle{
+        display: block;
+    }
+
+    .nav-toggle summary{
+        list-style: none;
+        cursor: pointer;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.8rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--ink);
+    }
+
+    .nav-toggle summary::-webkit-details-marker{
+        display: none;
+    }
+
+    .nav-toggle summary::after{
+        content: "\2261";
+        margin-left: 0.5rem;
+    }
+
+    .nav-toggle[open] summary::after{
+        content: "\2715";
+    }
+
+    .nav-toggle ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        margin: 0;
+        padding: 1.5rem 2rem;
+        position: absolute;
+        top: 4.5rem;
+        left: 0;
+        right: 0;
+        background: var(--bg);
+        border-bottom: 1px solid var(--border);
+        z-index: 10;
+    }
+
+    .nav-toggle ul a{
+        font-size: 0.92rem;
+        color: var(--muted);
+    }
+
+    .nav-toggle ul a.active{
+        color: var(--ink);
+        font-weight: 600;
     }
 }
