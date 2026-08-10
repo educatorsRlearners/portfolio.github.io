@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Projects &middot; Evan Simpson</title>
+</head>
+
+<body>
+
+    <nav class="site-nav" id="top">
+        <div class="container">
+            <span class="brand">Evan Simpson <span class="dot">&#9632;</span></span>
+            <ul>
+                <li><a href="index.html#top">Home</a></li>
+                <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+                <li><a href="writing.html">Writing</a></li>
+            </ul>
+            <details class="nav-toggle">
+                <summary>Menu</summary>
+                <ul>
+                    <li><a href="index.html#top">Home</a></li>
+                    <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+                    <li><a href="writing.html">Writing</a></li>
+                </ul>
+            </details>
+        </div>
+    </nav>
+
+    <header class="page-title">
+        <div class="container">
+            <div class="hero-eyebrows">
+                <span class="eyebrow">Projects</span>
+                <span class="eyebrow">Selected Builds</span>
+            </div>
+            <h1>Questions I've chased far enough to build something.</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="projects" class="container">
+            <div class="index-row">
+                <span class="idx">01</span>
+                <div>
+                    <h3><a href="https://github.com/educatorsRlearners/book-maturity">Identifying the Maturity Level
+                            of a Book to Improve Recommendations</a></h3>
+                    <p>When trying to predict the minimum reader age for a book, is the cover art or the book's
+                        details a better signal? I built and compared models using XGBoost, an LSTM, and computer
+                        vision on the cover art to answer the question — presented as a talk, <a
+                            href="https://youtu.be/BpOrMErz988">"Using Machine Learning to Identify Text
+                            Maturity."</a></p>
+                    <div class="tag-line">Web Scraping &middot; XGBoost &middot; LSTM &middot; Computer Vision</div>
+                </div>
+            </div>
+            <div class="index-row">
+                <span class="idx">02</span>
+                <div>
+                    <h3><a href="https://github.com/educatorsRlearners/podrevday/blob/master/README.md">Analysis of
+                            #PodRevDay</a></h3>
+                    <p>Scraped and analyzed Twitter conversation around the #PodRevDay hashtag to surface descriptive
+                        patterns in how the podcasting community discussed revenue, turning unstructured social data
+                        into a clear visual narrative.</p>
+                    <div class="tag-line">Twitter Scraping &middot; Descriptive Statistics &middot; Data
+                        Visualization</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <span>&copy; Evan Simpson</span>
+            <a href="mailto:p.evansimpson@gmail.com">p.evansimpson@gmail.com</a>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top" aria-label="Back to top">&uarr;</a>
+
+</body>
+
+</html>

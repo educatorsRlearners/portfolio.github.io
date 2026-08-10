@@ -1,5 +1,7 @@
 # Claude Files
 CLAUDE.md
+.claude/
+.playwright-mcp
 
 # VSCode
 .VSCode
@@ -10,3 +12,4 @@ CLAUDE.md
 # Working/scratch material, not site content
 artifacts/*
 creating_a_data_science_portfolio.txt
+prompt*.md
