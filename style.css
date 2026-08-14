@@ -388,6 +388,57 @@ section h2 em {
     color: var(--accent);
 }
 
+/* recommendations */
+.quote-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.quote-card {
+    margin: 0;
+    padding: 2rem 2.25rem 1.75rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+.quote-card::before {
+    content: "\201C";
+    display: block;
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 2.75rem;
+    line-height: 1;
+    color: var(--accent);
+    margin-bottom: 0.25rem;
+}
+
+.quote-card p {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--ink);
+    line-height: 1.5;
+    margin: 0 0 1.25rem;
+}
+
+.quote-card footer {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.quote-card .name {
+    color: var(--ink);
+    font-weight: 600;
+}
+
 .writing-subhead {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.75rem;
@@ -465,6 +516,14 @@ footer a:hover {
     #about .about-grid {
         grid-template-columns: 1fr;
         gap: 2.5rem;
+    }
+
+    .quote-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quote-card::before {
+        font-size: 2.2rem;
     }
 
     .hero h1 {
