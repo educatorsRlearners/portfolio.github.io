@@ -439,6 +439,38 @@ section h2 em {
     font-weight: 600;
 }
 
+/* skills */
+.skill-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.skill-card {
+    margin: 0;
+    padding: 2rem 2.25rem 1.75rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+.skill-card-idx {
+    display: block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+}
+
+.skill-card h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: var(--ink);
+    margin: 0 0 0.75rem;
+}
+
 .writing-subhead {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.75rem;
@@ -518,7 +550,8 @@ footer a:hover {
         gap: 2.5rem;
     }
 
-    .quote-grid {
+    .quote-grid,
+    .skill-grid {
         grid-template-columns: 1fr;
     }
 
